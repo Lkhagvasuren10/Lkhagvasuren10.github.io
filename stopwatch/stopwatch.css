@@ -1,0 +1,25 @@
+.maindiv{
+    height: 300px;
+    width: 100%;
+}
+.Mydiv{
+    width: 100%;
+    font-size: 100px;
+    text-align: center;
+    margin: auto;
+    font-family: sans-serif;
+}
+.buttondiv{
+    text-align: center;
+}
+.p{
+    font-size: 80px;
+    text-align: center;
+    height: 10px;
+    font-weight: bold;
+}
+.button{
+    height: 100px;
+    width: 300px;
+    font-size: 60px;
+}
