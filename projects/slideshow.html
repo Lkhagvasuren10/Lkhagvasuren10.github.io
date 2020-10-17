@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Slideshow</title>
+    </head>
+    <body>
+        <style>
+            img{
+                height: 600px;
+                transition: 6s;
+            }
+            button{
+            height: 100px;
+            width: 300px;
+            font-size: 60px; 
+            margin:2px;
+            border:none;
+            border-radius:3px;
+            background: #56a79a;
+            color:#fff;
+            font-size:50px;
+            cursor:pointer;
+}
+body{
+    background-color: gray;
+}
+#div{
+
+}
+        </style>
+        <div id="div1">
+            <img id="img1" src="1.jpg">
+        </div>
+        <div class="Container">
+            <button id="But1" onclick="prevBut()" disabled>Prev</button>
+            <button id="But2" onclick="nextBut()">Next</button>
+        </div>
+    </body>
+    <script>
+        var myArray = ["1.jpg","2.jpg","3.jpg","4.jpg"]
+            var myDiv = document.querySelector("#div1")
+            var myImage = document.querySelector("#img1")
+            var myBut1 = document.querySelector("#But1")
+            var myBut2 = document.querySelector("#But2")
+            var count = 0
+            function nextBut(){
+                count++
+                myImage.src = myArray[count]
+                if(count==myArray.length-1){
+                    myBut2.disabled = true
+                }
+                myBut1.disabled=false
+            }
+            function prevBut(){
+                count--
+                myImage.src = myArray[count]
+                myBut2.disabled = false
+                if(count==0){
+                    myBut1.disabled=true
+                }
+            }
+    </script>
+</html>

@@ -1,0 +1,41 @@
+.green{
+    background-color: green;
+    width: 100px;
+    height: 100px;
+    margin: 50px;
+}
+.yellow{
+    background-color: yellow;
+    width: 100px;
+    height: 100px;
+    margin: 50px;
+}
+.blue{
+    background-color: blue;
+    width: 100px;
+    height: 100px;
+    margin: 50px;
+}
+.left{
+    float: left;
+}
+body{
+    background-color: gray;
+}
+#maindiv{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 40%;
+    height: 25%;
+    padding: 20px;
+    color: white;
+    text-align: center;
+}
+button{
+    background: #56a79a;
+    color: white;
+    position: absolute;
+    height: 30px;
+}
